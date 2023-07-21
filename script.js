@@ -87,6 +87,8 @@ function getWeather(lat, lon) {
         })
         .then((data) => {
             console.log(data);
+            console.log("------------------------------------------------------------------------");
+            console.log(endpoint);
             getBackgroundColor(data.main.temp);
             getCity(data.name);
             getDate();
